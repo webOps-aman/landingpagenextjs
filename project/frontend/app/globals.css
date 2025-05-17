@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .nav__link {
+    @apply relative text-base font-medium w-fit block;
+  }
+
+  .nav__link::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #db2777; /* pink-600 */
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: right;
+    display: block;
+  }
+
+  .nav__link:hover::after {
+    transform: scaleX(1);
+  }
+}
