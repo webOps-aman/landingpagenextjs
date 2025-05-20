@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 
-import {Roboto} from "next/font/google"
+import {Poppins} from "next/font/google"
 import "./globals.css";
 import Responsive from "@/components/Home/Navbar/Responsive";
 
@@ -15,8 +15,8 @@ import Responsive from "@/components/Home/Navbar/Responsive";
 //   subsets: ["latin"],
 // });
 
-const font = Roboto({
-  weight: ['100', '300', '400', '500', '600', '700', '800', '900'],
+const font = Poppins({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   subsets: ['latin']
 })
 
